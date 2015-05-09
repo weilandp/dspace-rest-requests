@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 source rest.cfg
 
 if [ $# != 1 ]; then
