@@ -1,10 +1,5 @@
 #!/bin/sh
-TOKEN=${1}
-
 source rest.cfg
-TYPE="json"
-VERB="POST"
-ACTION="logout"
 
 if [ $# != 1 ]; then
   echo -e "ERROR! Wrong number of parameters!"
@@ -13,10 +8,11 @@ if [ $# != 1 ]; then
   exit 1
 fi
 
-RQST="{
-  \"email\":\"${EMAIL}\",
-  \"password\":\"${PASSWORD}\"
-}"
+TOKEN=${1}
+
+TYPE="json"
+VERB="POST"
+ACTION="logout"
 
 curl -k -4 \
   -H "rest-dspace-token: ${TOKEN}" \

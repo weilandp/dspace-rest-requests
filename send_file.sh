@@ -1,16 +1,16 @@
 #!/bin/bash
+source rest.cfg
 
-if [ $# != 4 ]; then
+if [ $# != 3 ]; then
   echo -e "ERROR! Wrong number of parameters!"
   echo -e "USE:"
-  echo -e "${0} <DSPACEURL> <TOKEN> <REQUEST_DECRIPTOR_FILE> <REQUEST_TYPE [\"json\"/\"xml\"]>"
+  echo -e "${0} <TOKEN> <REQUEST_DECRIPTOR_FILE> <REQUEST_TYPE [\"json\"/\"xml\"]>"
   exit 1
 fi
 
-DSPACEURL=${1}
-TOKEN=${2}
-REQUEST=${3}
-REQUEST_TYPE=${4}
+TOKEN=${1}
+REQUEST=${2}
+REQUEST_TYPE=${3}
 
 if [ -e ${REQUEST} ]; then
   source $REQUEST
