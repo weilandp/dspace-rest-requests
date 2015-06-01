@@ -29,5 +29,5 @@ curl -k -4 \
   -H "rest-dspace-token: ${TOKEN}" \
   -H "accept: application/${CONTENT_TYPE}" \
   -H "Content-Type: application/${CONTENT_TYPE}" \
-	-X ${VERB} "${DSPACEURL}/${ACTION}" \
-	-F upload=@"${FILE}"
+	-X ${VERB} "${DSPACEURL}/${ACTION}?${PARAMS}" \
+	-T "${FILE}"
