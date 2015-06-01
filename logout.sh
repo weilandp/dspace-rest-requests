@@ -1,17 +1,18 @@
 #!/bin/sh
-TOKEN=${1}
 
-source rest.cfg
+if [ $# != 2 ]; then
+  echo -e "ERROR! Wrong number of parameters!"
+  echo -e "USE:"
+  echo -e "${0} <DSPACEURL> <TOKEN>"
+  exit 1
+fi
+
+DSPACEURL=${1}
+TOKEN=${2}
+
 TYPE="json"
 VERB="POST"
 ACTION="logout"
-
-if [ $# != 1 ]; then
-  echo -e "ERROR! Wrong number of parameters!"
-  echo -e "USE:"
-  echo -e "${0} <TOKEN>"
-  exit 1
-fi
 
 RQST="{
   \"email\":\"${EMAIL}\",
