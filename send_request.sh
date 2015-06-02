@@ -1,4 +1,5 @@
 #!/bin/bash
+source rest.cfg
 
 if [ $# != 4 ]; then
   echo -e "ERROR! Wrong number of parameters!"
