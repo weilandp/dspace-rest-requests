@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $# != 2 ]; then
   echo -e "ERROR! Wrong number of parameters!"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 source rest.cfg
 
 TOKEN=$(./login.sh ${DSPACEURL} ${EMAIL} ${PASSWORD})
