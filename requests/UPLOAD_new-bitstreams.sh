@@ -3,7 +3,7 @@
 # {"id":37,"name":null,"handle":null,"type":"bitstream","link":"/RESTapi/bitstreams/37","expand":["parent","policies","all"],"bundleName":"ORIGINAL","description":null,"format":"Unknown","mimeType":"application/octet-stream","sizeBytes":99021,"parentObject":null,"retrieveLink":"/bitstreams/37/retrieve","checkSum":{"value":"791274902ccd308c8a411e0d3395ec03","checkSumAlgorithm":"MD5"},"sequenceId":-1,"policies":null}
 
 VERB="POST"
-ACTION="items/16/bitstreams"
-FILE="requests/files/pdf1.pdf"
+ACTION="items/15/bitstreams"
+FILE="./requests/files/pdf1.pdf"
 
-PARAMS='name=pdf1.pdf&description=DESCRIPTION_OF_pdf1.pdf_WITHOUT_SPACES!!'
+PARAMS='name=TESTE.txt&description=DESCRIPTION_WITHOUT_SPACES!!'

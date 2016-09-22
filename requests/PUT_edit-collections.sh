@@ -1,7 +1,7 @@
 # {}
 
 VERB="PUT"
-ACTION="collections/1"
+ACTION="collections/2"
 
 RQST_JSON='
 {
