@@ -33,6 +33,13 @@ else
     \"password\":\"${PASSWORD}\"
   }"
 
+  echo -e "curl -k -4 \
+    -H \"accept: application/${TYPE}\" \
+    -H \"Content-Type: application/${TYPE}\" \
+    -X ${VERB} \"${DSPACEURL}/${ACTION}\" \
+    -d \"${RQST}\""
+
+
   curl -k -4 \
     -H "accept: application/${TYPE}" \
     -H "Content-Type: application/${TYPE}" \

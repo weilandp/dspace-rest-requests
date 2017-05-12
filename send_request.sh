@@ -4,7 +4,7 @@ if [ $# != 5 ]; then
   echo -e "ERRO! Wrong number parameter!"
   echo -e "USE:"
   echo -e "${0} <DSPACEURL> <TOKEN> <REQUEST_DECRIPTOR_FILE> <REQUEST_TYPE [\"json\"/\"xml\"]> <DSPACE_VERSION: [4,5,6]>"
-  exit 1
+  #exit 1
 fi
 
 DSPACEURL=${1}

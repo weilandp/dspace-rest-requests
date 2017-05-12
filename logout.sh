@@ -21,6 +21,13 @@ else
   AUTH="-H \"rest-dspace-token: ${TOKEN}\""
 fi
 
+echo -e "curl -k -4 \
+  ${AUTH} \
+  -H \"accept: application/${TYPE}\" \
+  -H \"Content-Type: application/${TYPE}\" \
+  -X ${VERB} \"${DSPACEURL}/${ACTION}\""
+
+
 curl -k -4 \
   ${AUTH} \
   -H "accept: application/${TYPE}" \
